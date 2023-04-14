@@ -20,8 +20,6 @@ int walls[3][3] = {
 // 1-> start  [0][2]
 // 2-> target [2][0]
 typedef struct tile {
-	//1 0
-	//0 1
 	tile_type type;
 	int row;
 	int column;
@@ -63,20 +61,12 @@ void main() {
 	queue <tile> open;
 	vector <tile> get_path;
 
-	//tile current = mp[0][2];
 
 	tile* target = & mp[2][0];
 	tile* start = &mp[0][2];
 	tile* current = & mp[0][2];
 	open.push(*current);
-	/*start.view();
-	cout << start.parent << endl;
-	start.parent = &mp[target.row][target.column];
-	cout << start.parent << endl;
-	target = mp[0][1];
-	open.push(target);
-	start.parent->view();
-	return;*/
+
 	while (!open.empty()) {
 
 		//current.row+1 , curent.column
@@ -207,10 +197,6 @@ void main() {
 
 	//}
 }
-//
-//	reverse(get_path.begin(), get_path.end());
-//	cout << get_path.front().row << " " << get_path.front().column;
-//}
 
 
 //bool exist_in_closed(tile& current) {
