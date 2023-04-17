@@ -1,5 +1,4 @@
 ﻿  Source.cpp
 C:\programming\cpp\BFS\game\Source.cpp(33,2): warning C4091: 'typedef ': ignored on left of 'tile' when no variable is declared
-C:\programming\cpp\BFS\game\Source.cpp(39,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\programming\cpp\BFS\game\Source.cpp(183,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\programming\cpp\BFS\game\Source.cpp(138,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   game.vcxproj -> C:\programming\cpp\BFS\x64\Debug\game.exe
